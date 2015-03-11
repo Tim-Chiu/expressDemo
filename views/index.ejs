@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.js' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      
+    <div class="content container">
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+        
+        <ul>
+            <% for(var index = 0; index < 4; index++){ %>
+            <li>Item <%= index %></li>
+            <% } %>
+        </ul>   
+    </div>
+      
+
+      
+      <script src="/javascripts/jquery-1.11.2.min.js"></script>
+      <script src="/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
